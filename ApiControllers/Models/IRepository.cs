@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ApiControllers.Models
 {
-    interface IRepository
+    public interface IRepository
     {
         IEnumerable<Reservation> Reservations { get; }
         Reservation this[int id] { get; }
