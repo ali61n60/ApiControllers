@@ -14,6 +14,7 @@ namespace ApiControllers.Controllers
         public string GetString() => "This is a string response";
 
         [HttpGet("reza")]
+        [Produces("application/xml")]
         public Reservation GetObject() => new Reservation {
             ReservationId = 100,
             ClientName = "Joe",
