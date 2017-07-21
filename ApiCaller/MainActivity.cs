@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Json;
 using System.Net;
@@ -6,6 +7,9 @@ using System.Threading.Tasks;
 using Android.App;
 using Android.Widget;
 using Android.OS;
+using ApiCaller.Models;
+using Newtonsoft.Json;
+
 //https://developer.xamarin.com/recipes/android/web_services/consuming_services/call_a_rest_web_service/
 namespace ApiCaller
 {
@@ -35,11 +39,28 @@ namespace ApiCaller
                 // Fetch the weather information asynchronously, 
                 // parse the results, then update the screen:
                 JsonValue json = await FetchWeatherAsync(url);
-                _textView1.Text = json.ToString();
-                // ParseAndDisplay (json);
+                IEnumerable<Reservation> reservations= ParseInputData (json);
+                showData(reservations);
             };
             _textView1 = FindViewById<TextView>(Resource.Id.textView1);
         }
+
+        private void showData(IEnumerable<Reservation> reservations)
+        {
+            string data = "";
+            foreach (Reservation reservation in reservations)
+            {
+                data += reservation.ClientName + ":" + reservation.Location + "  ";
+            }
+            _textView1.Text = data;
+        }
+
+        private IEnumerable<Reservation> ParseInputData(JsonValue json)
+        {
+           return JsonConvert.DeserializeObject<IEnumerable<Reservation>>(json.ToString());
+            
+        }
+
         private async Task<JsonValue> FetchWeatherAsync(string url)
         {
             // Create an HTTP web request using the URL:
