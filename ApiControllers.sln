@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiControllers", "ApiContro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiCaller", "ApiCaller\ApiCaller.csproj", "{43462A47-1B6D-40E5-A5D5-96EC30EEFC7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelF", "ModelF\ModelF.csproj", "{0D56734C-21B1-4062-A8DC-9FEB3A9BF0B3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{008212CD-28AC-4872-B306-B49847F4FEC2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +25,10 @@ Global
 		{43462A47-1B6D-40E5-A5D5-96EC30EEFC7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43462A47-1B6D-40E5-A5D5-96EC30EEFC7C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{43462A47-1B6D-40E5-A5D5-96EC30EEFC7C}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{0D56734C-21B1-4062-A8DC-9FEB3A9BF0B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0D56734C-21B1-4062-A8DC-9FEB3A9BF0B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0D56734C-21B1-4062-A8DC-9FEB3A9BF0B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0D56734C-21B1-4062-A8DC-9FEB3A9BF0B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{008212CD-28AC-4872-B306-B49847F4FEC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{008212CD-28AC-4872-B306-B49847F4FEC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{008212CD-28AC-4872-B306-B49847F4FEC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{008212CD-28AC-4872-B306-B49847F4FEC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

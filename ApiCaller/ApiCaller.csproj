@@ -84,9 +84,9 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ModelF\ModelF.csproj">
-      <Project>{0d56734c-21b1-4062-a8dc-9feb3a9bf0b3}</Project>
-      <Name>ModelF</Name>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{008212cd-28ac-4872-b306-b49847f4fec2}</Project>
+      <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

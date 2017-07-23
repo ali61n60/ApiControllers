@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using ModelF;
+using Model;
+
+//using ModelF;
 
 namespace ApiControllers.Controllers
 {
@@ -15,7 +17,8 @@ namespace ApiControllers.Controllers
 
         [HttpGet("reza")]
         [Produces("application/xml")]
-        public Reservation GetObject() => new Reservation {
+        public Reservation GetObject() => new Reservation
+        {
             ReservationId = 100,
             ClientName = "Joe",
             Location = "Board Room"
