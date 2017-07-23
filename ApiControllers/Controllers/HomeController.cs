@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Model;
+using ModelF;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ApiControllers.Controllers
 {
     public class HomeController:Controller
     {
-        private IRepository repository { get; set; }
+        private ModelF.IRepository repository { get; set; }
         public HomeController(IRepository repo)
         {
             repository = repo;

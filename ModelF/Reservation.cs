@@ -1,22 +1,14 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Threading.Tasks;
 
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-
-namespace ApiCaller.Models
+namespace ModelF
 {
     public class Reservation
     {
         public int ReservationId { get; set; }
         public string ClientName { get; set; }
         public string Location { get; set; }
-
     }
 }
