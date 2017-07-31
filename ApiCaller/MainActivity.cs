@@ -67,6 +67,7 @@ namespace ApiCaller
             HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(new Uri(url));
             request.ContentType = "application/json";
             request.Method = "GET";
+            //request.Headers.Add(HttpRequestHeader.Authorization,"Token");
 
             // Send the request to the server and wait for the response:
             using (WebResponse response = await request.GetResponseAsync())

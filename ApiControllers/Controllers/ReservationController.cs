@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Model;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,6 +13,14 @@ namespace ApiControllers.Controllers
         {
             repository = repo;
         }
+
+        [HttpGet("SayHello")]
+        public string SayHello()
+        {
+            return String.Format("Hello World {0}",DateTime.Now.ToString());
+        }
+        
+
 
         [HttpGet]
         public IEnumerable<Reservation> Get() => repository.Reservations;
